@@ -1,0 +1,10 @@
+[
+  {
+    "server_name": "Server A",
+    "server_ip": "10.216.67.177"
+  },
+  {
+    "server_name": "Server B",
+    "server_ip": "10.216.67.178"
+  }
+]
