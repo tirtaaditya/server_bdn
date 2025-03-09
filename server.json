@@ -1,10 +1,10 @@
 [
   {
-    "server_name": "Server A",
+    "server_name": "Server Utama",
     "server_ip": "103.171.85.78"
   },
   {
-    "server_name": "Server B",
+    "server_name": "Server Backup",
     "server_ip": "103.179.57.78"
   }
 ]
