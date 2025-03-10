@@ -2,9 +2,5 @@
   {
     "server_name": "Server Utama",
     "server_ip": "103.171.85.78"
-  },
-  {
-    "server_name": "Server Backup 1",
-    "server_ip": "103.171.85.188"
   }
 ]
