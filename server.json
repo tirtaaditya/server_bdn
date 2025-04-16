@@ -1,18 +1,6 @@
 [
   {
-    "server_name": "Region V (Jakarta 3)",
-    "server_ip": "103.52.115.123"
-  },
-  {
-    "server_name": "Region III (Jakarta 1)",
-    "server_ip": "103.189.234.127"
-  },
-  {
-    "server_name": "Region IV (Jakarta 2)",
-    "server_ip": "103.171.85.188"
-  },
-  {
-    "server_name": "Server Backup (CR)",
+    "server_name": "Server (CR)",
     "server_ip": "202.43.249.42"
   }
 ]
