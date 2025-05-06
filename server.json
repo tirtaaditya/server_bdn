@@ -3,5 +3,9 @@
   {
     "server_name": "Server (IdC)",
     "server_ip": "103.52.114.59"
+  },
+  {
+    "server_name": "Server (Jangan Digunakan)",
+    "server_ip": "199.180.131.85"
   }
 ]
