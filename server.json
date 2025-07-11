@@ -2,5 +2,9 @@
   {
     "server_name": "Server CR",
     "server_ip": "199.180.129.89"
-  }
+  },
+  {
+    "server_name": "Server IDC",
+    "server_ip": "103.23.198.14"
+  }  
 ]
