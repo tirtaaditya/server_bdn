@@ -68,12 +68,42 @@ for /f "usebackq delims=" %%L in ("%input_file%") do (
 
 move /Y %temp_file% %input_file% >nul
 
-REM Git Push
-git add server.json >nul 2>&1
-git commit -m "Update status server [%DATE% %TIME%]" >nul 2>&1
+REM Ambil commit message dari JSON file server.json
+set "commit_msg="
+
+for /f "usebackq delims=" %%L in ("%input_file%") do (
+    set "line=%%L"
+    echo !line! | findstr /i "\"server_name\"" >nul
+    if !errorlevel! == 0 (
+        for /f "tokens=2 delims=:" %%A in ("!line!") do (
+            set "raw_name=%%A"
+            set "raw_name=!raw_name:"=!"
+            set "raw_name=!raw_name:,=!"
+            call :trimleft "!raw_name!" name_part
+            set "commit_msg=!commit_msg! | !name_part!"
+        )
+    )
+)
+
+REM Hilangkan ' | ' di awal string
+set "commit_msg=!commit_msg:~3!"
+
+REM Ambil timestamp sekarang (format YYYY-MM-DD HH:MM:SS)
+for /f "tokens=2 delims= " %%a in ("%date%") do set d=%%a
+set "year=%date:~6,4%"
+set "month=%date:~3,2%"
+set "day=%date:~0,2%"
+set "hour=%time:~0,2%"
+set "minute=%time:~3,2%"
+set "second=%time:~6,2%"
+if "%hour:~0,1%"==" " set "hour=0%hour:~1,1%"
+set timestamp=[%year%-%month%-%day% %hour%:%minute%:%second%]
+
+git add %input_file% >nul 2>&1
+git commit -m "%timestamp% !commit_msg!" >nul 2>&1
 git push origin main >nul 2>&1
 
-echo !jam! Push Sukses
+echo !timestamp! Push Sukses
 timeout /t 10 >nul
 goto loop
 
