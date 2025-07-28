@@ -1,5 +1,20 @@
 [
     {
+        "server_name": "Server IDC JakBar (OK)",
+        "server_ip": "103.117.56.76"
+    {
+        "server_name": "Server IDC JakBar (OK)",
+        "server_ip": "103.117.56.76"
+    },
+    {
+        "server_name": "Server IDC JakSel (OK)",
+        "server_ip": "103.23.198.14"
+    },
+    {
+        "server_name": "Server IDC JakSel (OK)",
+        "server_ip": "103.23.198.14"
+    },
+    {
         "server_name": "Server CR Sgp (ERROR)",
         "server_ip": "202.43.248.36"
     }
