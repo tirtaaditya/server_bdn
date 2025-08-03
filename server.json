@@ -6,9 +6,5 @@
     {
         "server_name": "Server IDC JakSel (OK)",
         "server_ip": "103.23.198.14"
-    },
-    {
-        "server_name": "Server IDC SGP (OK)",
-        "server_ip": "103.250.10.191"
     }
 ]
