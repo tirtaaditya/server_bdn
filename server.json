@@ -6,5 +6,9 @@
     {
         "server_name": "Server IDC JakSel (OK)",
         "server_ip": "116.193.190.114"
+    },
+    {
+        "server_name": "Server Uji Coba DNS (Jangan Digunakan)",
+        "server_ip": "https://api.kopperpensibdn.com/"
     }
 ]
