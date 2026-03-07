@@ -1,10 +1,10 @@
 [
     {
-        "server_name": "Server IDC JakSel (OK)",
-        "server_ip": "116.193.190.114"
-    },
-    {
         "server_name": "Server CP (OK)",
         "server_ip": "198.167.141.15"
+    },
+    {
+        "server_name": "Server IDC JakSel (OK)",
+        "server_ip": "116.193.190.114"
     }
 ]
