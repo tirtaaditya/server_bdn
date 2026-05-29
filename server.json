@@ -1,14 +1,14 @@
 [
     {
-        "server_name": "Server CP",
-        "server_ip": "198.167.141.15"
-    },
-    {
         "server_name": "Server IDC JakSel",
         "server_ip": "116.193.190.114"
     },
     {
         "server_name": "Server IDC JakBar",
         "server_ip": "api.kopperpensibdn.com"
-    }
+    },
+    {
+        "server_name": "Server CP",
+        "server_ip": "198.167.141.15"
+    }    
 ]
